@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+    <div id="question">Have a question? We can help. *</div>
+    <div class="proPageTitle">
+        <h1>GIRLS' NEW ARRIVALS</h1>
+    </div>
+   
+    <div id="sortFilMenu">
+        <div id="sortFil">
+        <button id="filter" onclick="showFilter()">Show Filters</button>
+        <select id="sort">
+            <option>Featured</option>
+            <option value="Price-Low-to-High" label="Price: Low - High" >Price: Low - High</option>
+            <option value="Price-High-to-Low" label="Price: High - Low" >Price: High - Low</option>
+            <option value="Top-Rated" label="Top Rated" >Top Rated</option>
+            <option value="Newest" label="New Arrival" >New Arrival</option></select>
+        </div>
+        <div id="numMenu">
+            <select id="numop">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select> <p id="ofNum">of 3</p>
+            <div id="totalView"><p>View 120</p></div>
+
+        </div>
+    </div>
+    <div id="godown">
+    <div id="container">
+        </div>
+        <!-- <div class="box">
+              <img src="https://lp2.hm.com/hmgoepprod?set=source[/5f/90/5f9063085b86c625b153ae6c27488dbb1e2e6aca.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]" alt="">
+              <img class="hover_img" src="https://lp2.hm.com/hmgoepprod?set=source[/37/aa/37aad356be2bda043481e33b967a43d6885ee09c.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]" alt="">
+        </div> -->
+       
+    </div>
+
+</body>
+
+</html>
+<script>
+    // let kids="https://www2.hm.com/en_in/kids/girls/new-arrivals/_jcr_content/main/productlisting.display.json?sort=stock&image-size=small&image=stillLife&offset=36&page-size=36"
+    // let url="https://www2.hm.com/en_in/women/shop-by-product/tops/_jcr_content/main/productlisting.display.json?sort=stock&image-size=small&image=model&offset=36&page-size=36"
+    // let url = "https://www2.hm.com/en_in/women/new-arrivals/clothes/_jcr_content/main/productlisting.display.json?sort=stock&image-size=small&image=model&offset=36&page-size=36";
+//   let url="https://www2.hm.com/en_in/men/new-arrivals/clothes/_jcr_content/main/productlisting.display.json?sort=stock&image-size=small&image=model&offset=36&page-size=36"
+//   GIRLS NEW ARRIVALS:- `https://www2.hm.com/en_in/kids/girls/new-arrivals/_jcr_content/main/productlisting.display.json?sort=stock&image-size=small&image=stillLife&offset=36&page-size=36`
+let url=`https://www2.hm.com/en_in/kids/girls/new-arrivals/_jcr_content/main/productlisting.display.json?sort=stock&image-size=small&image=stillLife&offset=36&page-size=36`;
+    fetch(url)
+        .then(function (res) {
+            return res.json();
+        }).then(function (res) {
+            console.log(res.products)
+            append(res.products)
+        }).catch(function (err) {
+            console.log()
+        })
+
+        function append(data){
+            let container=document.getElementById("container")
+            data.forEach((el) => {
+                let div=document.createElement("div")
+                div.setAttribute("id","holdproduct")
+                div.style.height="500px"
+
+                let imgdiv=document.createElement("div")
+                imgdiv.setAttribute("id","box")
+                let productInfo=document.createElement("div")
+                productInfo.setAttribute("id","productInfo")
+                let bac=document.createElement("img")
+                bac.setAttribute("class","hover_img")
+                bac.src=el.image[0].dataAltImage;
+                let frunt=document.createElement("img")
+                frunt.src=el.image[0].src;
+                // let button=document.createElement("button");
+                // button.innerText="submit"
+                let p=document.createElement("p");
+                p.innerText=`Product: ${el.title}`;
+                let p1=document.createElement("p");
+                p1.innerText=`Brand: ${el.brandName}`;
+                let p2=document.createElement("p");
+                p2.innerText=el.price;
+                console.log(p,p1,p2)
+                
+                imgdiv.append(frunt,bac)
+                productInfo.append(p,p1,p2)
+                div.append(imgdiv,productInfo)
+                container.append(div)
+            });
+        }
+
+        var count=0
+    function showFilter(){
+       
+        if(count%2==0)
+        {
+            var filterbut=document.getElementById("filter")
+            filterbut.innerText="Hide Filter";
+            filterbut.style.width="50%"
+
+            let container=document.getElementById("container")
+            container.style.width="70%"
+            container.style.marginLeft="30%"
+
+            let sidefilter=document.createElement("div");
+            sidefilter.style.width="30%"
+
+            // let category=document.createElement("button");
+            // category.innerText="Category"
+            // sidefilter.append(category);
+
+            // document.getElementById("godown").append(sidfilter)
+            count++
+        }
+        else
+        {
+            var filterbut=document.getElementById("filter")
+            filterbut.innerText="show Filter";
+            filterbut.style.width="25%"
+
+            let container=document.getElementById("container")
+            container.style.width="100%"
+            container.style.marginLeft="0%"
+            count++
+        }
+        
+        
+    }
+</script>

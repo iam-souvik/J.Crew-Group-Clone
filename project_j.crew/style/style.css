@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    overflow: scroll;
+} */
+#container {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 415px);
+    grid-template-rows: repeat(9, 510px);
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.box {
+    /* margin: auto; */
+    width:400px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    /* border: 1px solid rgb(100, 98, 98); */
+}
+
+.porduct_text {
+    margin-top: 10px;
+    /* border: 1px solid gray; */
+    text-align: left;
+    padding: 10px;
+}
+
+.product_div {
+    /* border: 1px solid rgb(136, 130, 130); */
+    padding:10px;
+    margin: auto;
+   
+}
+.product_div:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+img {
+    width: 100%;
+    /* height: 100%; */
+    transition: all linear 0.4s;
+}
+
+img.hover_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.box:hover img.hover_img {
+    opacity: 1;
+}
+
+.btn {
+    position:absolute;
+    margin-top: 290px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    margin-left: 130px;
+    /* padding: 20px; */
+
+    opacity: 1;
+ 
+}
+
+.box:hover .btn{
+    opacity: 1;
+}
+
+
+.heart {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(121, 112, 112);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 0 4px;
+    transform: rotate(-45deg);
+    margin-top: -582px;
+    margin-left: 353px;
+
+    padding: -3px;
+
+}
+
+.heart::before {
+    position: absolute;
+    content: "";
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+
+
+
+}
+
+.heart::after {
+    position: absolute;
+    content: "";
+    right: -50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+
+}
+
+.additem {
+    height: 50px;
+    width: 300px;
+    margin-left: 560px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+#heart_div{
+    border:1px solid gray;
+    height: 50px;
+    width: 50px;
+    margin-top: -60px;
+    margin-left: 90%;
+    text-align: center;
+    font-size: 36px;     
+}
+
+/* .heart:hover {
+    background-color: black;
+} */
+/* //-------------------popup------------------------------------ */
+
+
+
+.meal-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: #fff; */
+    background: var(--tenne-tawny);
+    width:73%;
+    height:600px;
+    overflow-y: scroll;
+    display:none;
+
+    background-color: white;
+    /* margin: auto; */
+    margin-top: 30px;
+    margin-top:10px;
+}
+.meal-details::-webkit-scrollbar{
+    width: 10px;
+}
+.meal-details::-webkit-scrollbar-thumb{
+    background: #f0f0f0;
+    border-radius: 2rem;
+  
+}
+.showRecipe{
+    display: block;
+}
+
+/* .meal-details-content{
+    margin: 2rem;
+} */
+
+.recipe-close-btn{
+    position: absolute;
+    right: 15px;
+    top: -285px;
+    left:810px;
+    background: white;
+    font-weight: 100;
+    font-size: 20px;
+    border: none;
+    width: 35px;
+    height: 35px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 5;
+}
+.recipe-title{
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    font-size: 47px;
+    text-align: center;
+}
+.recipe-category{
+    background: #fff;
+    font-weight: 700;
+    color: var(--tenne-tawny);
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-left:45%;
+
+}
+

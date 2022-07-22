@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zoomProduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</style>
+</head>
+<body>
+    <div id="question">Have a question? We can help. *</div>
+    <div id="zmen">
+        <div id="z1">
+            <img id="smallimg" onclick="change()">
+            <img id="smallimg1" onclick="change1()">
+        </div>
+        <div id="z2"><img id="bigimg"></div>
+        <div id="z3">
+            <h1 id="productName">Kids' New York graphi T-shirt</h1>
+            <p id="artCod">1</p>
+            <div id="reating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                
+                <u>Be the first to write a review.</u></div>
+            <h1 id="price">INR</h1>
+            <div id="icons">
+               Color: Nyc Icons<br>
+                <img src="https://www.pikpng.com/pngl/m/540-5404523_select-your-city-circle-clipart.png"> 
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/NYC_Mesh_logo.svg/480px-NYC_Mesh_logo.svg.png">
+            </div>
+            <div id="selectSize"><p>Size:
+            Select a Size</p>
+            <p>Size Chart</p> </div>
+            <h2 id="usize"><i>All size are US size.</i></h2>
+
+            <div id="sizeButton">
+                <button class="sizebtn">XX-Small</button>
+                <button class="sizebtn">X-Small</button>
+                <button class="sizebtn">Small</button>
+                <button class="sizebtn">Medium</button>
+                <button class="sizebtn">Large</button>
+                <button class="sizebtn">X-Large</button>
+            </div>
+            <div id="quantity">
+                Quantity: <select id="numQuantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option><option value="1">1</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select> </div>
+                <div id="addCart">
+                    <h2><i>Prices include duties and taxes.</i></h2>
+                    <button id="addBag" onclick="addtoBag()">ADD TO BAG</button>
+                </div>
+                <div id="fit">
+                    <h2>Size & Fit</h2>
+                    <p> XXS (2-3); XS (4-5); S (6-7); M (8-9); L (10-11); XL (12-14).</p>
+                </div>
+                <h2 class="hedDet">Product Details</h2>
+                <h3 class="protype">Brand Name:-</h3>
+                <p id="probrand"></p>
+                <h3 class="protype">Category:-</h3>
+                <p id="proCategory"></p>
+                <h3 class="protype">Color:-</h3>
+                <p id="proColor"></p>
+                <hr></hr>
+                <!-- <h2 class="hedDet">Our Fabrics, Re-imagined</h2> -->
+                <div id="zShare">
+                <h3>Share</h3>
+                <img class="z3Logo" src="https://clipartcraft.com/images/twitter-transparent-logo-round-3.png">
+                <img class="z3Logo" src="https://th.bing.com/th/id/R.7f689981b7050a848293ef0344f30d33?rik=Ooi2n6Vh4wBGOQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-E9cQt2nvyTc%2fURusPT5VqnI%2fAAAAAAAAABw%2fwU8Q0YrG37M%2fs1600%2ffacebook%2blogo%2b3.png&ehk=%2bfW27pizyZApmGoIvKOHuCku5JHSDG52uNTA6WpkGbM%3d&risl=&pid=ImgRaw&r=0">
+                <img class="z3Logo" src="https://th.bing.com/th/id/R.4b871823659901418a7668523e5e732b?rik=r7djJ5Q8LbXRKg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fInsta-Logo-Transparent-Background.png&ehk=sK0LLqc%2b83HtIYOeOBu3AL%2fk4E6mmttsU2GxR08Rd8A%3d&risl=&pid=ImgRaw&r=0">
+                </div>
+        </div>     
+    </div>
+    <div id="zReview">
+        <div id="revStar"><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span></div>
+    <div id="revcomment">
+    <p>There are no reviews for this product. Be the first to comment.</p>
+    <p id="revP"><u>Write a Review</u></p></div>
+    </div>
+</body>
+</html>
+<script>
+    let productData=JSON.parse(localStorage.getItem("productData"))
+
+    document.getElementById("productName").innerText=productData.title;
+    document.getElementById("artCod").innerText=`Item_${productData.articleCode}`;
+    document.getElementById("price").innerText=productData.price;
+    document.getElementById("bigimg").src=productData.image[0].dataAltImage
+    document.getElementById("smallimg").src=productData.image[0].dataAltImage;
+    document.getElementById("smallimg1").src=productData.image[0].src;
+    document.getElementById("proCategory").innerText=productData.category
+    document.getElementById("proColor").innerText=productData.swatches[0].colorName;
+    document.getElementById("probrand").innerText=productData.brandName
+    // document.getElementById("proDetails").innerText=productData.onClick;
+
+    console.log(productData)
+
+    function change(){
+    document.getElementById("bigimg").src=productData.image[0].dataAltImage;
+    }
+
+    function change1(){
+    document.getElementById("bigimg").src=productData.image[0].src
+    }
+
+
+    function addtoBag(){
+        // let document.getElementById("addBag")
+        let arr=[];
+        let obj={
+            Name:productData.title,
+            Price:productData.price,
+            Brand:productData.brandName,
+            Code:productData.articleCode,
+        }
+        arr.push(obj)
+        localStorage.setItem("productItem",JSON.stringify(arr))
+    }
+
+</script>

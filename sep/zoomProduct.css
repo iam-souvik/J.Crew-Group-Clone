@@ -1,0 +1,211 @@
+#question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid rgb(182, 181, 181);
+}
+#zmen{
+display: flex;
+width: 86%;
+margin-left: 8%;
+
+}
+#z1{
+    height: 80px;
+    width: 6%;
+}
+#smallimg{
+    height: 100%;
+    width: 100%;
+}
+#smallimg1{
+    height: 100%;
+    width: 100%;
+}
+#bigimg{
+    height: 100%;
+    width: 100%;
+}
+#z2{
+    height: 550px;
+    width: 50%;
+    margin-left: 1%;
+}
+#z3{
+    width: 36%;
+    margin-left: 2%;
+}
+#productName{
+    font-size:16px ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#artCod{
+    margin-top: -1%;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 99, 99);;
+}
+#reating{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.checked {
+    color: orange;
+  }
+#reating>u{
+    margin-left: 4%;
+}
+#price{
+    font-size:18px ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#icons{
+    font-size:12px ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#icons>img{
+    width: 6%;
+    margin-top: 1%;
+}
+#selectSize{
+    display: flex;
+    justify-content:space-between;
+    font-size:12px ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#usize{
+    font-size:14px ;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: -3%;
+}
+#sizeButton{
+    
+}
+#sizeButton>button{
+    height: 40px;
+    width: 100px;
+    margin-top: 1%;
+    background-color: white;
+    border: 1px solid rgb(182, 181, 181);
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#quantity{
+    margin-top: 8%;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(124, 124, 124);
+    font-weight: bold;
+}
+#numQuantity{
+    width: 50px;
+    height: 25px;
+    margin-left: 2%;
+}
+#addCart{
+margin-top: 5%;
+    /* border: 1px solid rgb(124, 124, 124); */
+}
+#addCart>h2{
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+#addBag{
+    height: 50px;
+    width: 80%;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: -2%;
+    /* margin-top: 2%; */
+}
+#fit{
+    border-top: 2px solid rgb(182, 181, 181);
+    border-bottom: 2px solid rgb(182, 181, 181);
+    margin-top: 7%;
+}
+#fit>h2{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}    
+#fit>p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    font-weight: 500; 
+}
+.hedDet{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.protype{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 99, 99);
+}
+#probrand{
+    margin-top: -3%;
+    margin-left: 4%;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#proCategory{
+    margin-top: -3%;
+    margin-left: 4%;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#proColor{
+    margin-top: -3%;
+    margin-left: 4%;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#zShare{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.z3Logo{
+    width: 10%;
+    height: 8%;
+    margin-left: 5%;
+
+}
+#zReview{
+    height: 120px;
+    width: 86%;
+    margin-left: 8%;
+    margin-top: 4%;
+    background-color:rgb(241, 241, 253);
+    border-bottom: 1px solid rgb(179, 179, 253);
+}
+#revStar{
+    margin-top: 10px;
+    height: 30%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+#revcomment{
+    margin-top: -1%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-left: 2%;
+}
+#revcomment>#revP{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 1%;
+    
+}
+#revcomment>#revP:hover{
+    color: rgb(29, 29, 247);
+}
+

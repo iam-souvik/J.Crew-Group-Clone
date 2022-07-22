@@ -1,0 +1,127 @@
+* {
+    background-color: #f0f1f2;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    line-height: -30px;
+}
+
+#footer>h4 {
+    font-size: 14px;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    margin-left: 10px;
+
+}
+
+#footer>p {
+    font-size: 15px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    word-spacing: 1px;
+}
+
+#footer>input,
+#footer>button {
+    padding: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#footer>button {
+    background-color: black;
+    color: white;
+    margin-left: -8px;
+    cursor: pointer;
+
+}
+
+#footer>input {
+    width: 250px;
+}
+
+#footer>div:nth-child(1)>p {
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+#footer>div:nth-child(2)>p {
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+#footer>div:nth-child(3)>p {
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+#footer>#first,
+#footer>#second,
+#footer>#third,
+#footer>#four {
+    margin-top: 20px;
+}
+
+#footer>#facebook,
+#footer>#souvik {
+    margin-left: 20px;
+
+}
+
+
+#footer>#india {
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#footer>i {
+    padding: 20px 20px 20px 0px;
+ /* border: 1px solid red; */
+ 
+}
+
+#footer>#india>a {
+    color: black;
+    margin-left: 20px;
+}
+#footer>#india>img{
+    width: 21px;
+}
+
+#footer>#souvik>p {
+    color: gray;
+    margin-top: 30px;
+}
+
+#footer>#first {
+    margin-left: 10px;
+}
+
+#footer>#second {
+    margin-left: 10px;
+}
+
+#footer>#third {
+    width: 230px;
+    margin: 0px 60px 0px 10px;
+}
+#footer>#logo{
+    display: flex;
+    gap: 10px;
+}
+#footer>#logo>img{
+    margin-top: 30px;
+    width: 70px;
+    margin-left: 20px;
+}

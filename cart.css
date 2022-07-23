@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#limited {
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#limited > div {
+  color: black;
+}
+#apContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 70px;
+}
+#apContainer > div:nth-child(1) > div {
+  padding: 10px;
+}
+#apContainer > div:nth-child(1) {
+  width: 800px;
+  height: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#apContainer > div:nth-child(2) {
+  width: 350px;
+
+  height: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#discriptionSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contents {
+  color: grey;
+  padding: 10px;
+}
+.boldHead {
+  font-size: 20px;
+  font-weight: 700;
+}
+#apContainer > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.secondDisplay {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#secondDiv > div {
+  margin-top: 10px;
+  padding: 10px;
+}
+#CHECKOUT {
+  background-color: #0061fe;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  margin-left: 30px;
+}
+#APPLY {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
+#secondDiv > div > input {
+  padding: 10px;
+}
+#dataHere > div {
+  display: flex;
+  gap: 25px;
+}
+#dataHere > div > div > img {
+  width: 150px;
+  height: 170px;
+}
+#dataHere > div > div:nth-child(3) {
+  margin-left: 430px;
+}

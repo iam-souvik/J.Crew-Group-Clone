@@ -1,3 +1,898 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <!-- <link rel="stylesheet" href="./footer.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #box {
+            background-image: url("https://www.jcrew.com/brand_creative/homepage2022/07-Jul4/2022jul_0719_hp_w_img0_v2.jpg");
+            width: 100vw;
+            height: 100vh;
+            margin-left: 0px;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            /* text-align: center; */
+            /* padding: 10px; */
+        }
+
+        #box>div {
+            width: 60%;
+            /* border: 1px solid red; */
+            margin: auto;
+            text-align: center;
+            height: 100%;
+            /* line-height:10px; */
+            /* margin-top: 50px; */
+        }
+
+
+
+        #box>div>p:nth-child(1) {
+            color: white;
+            font-size: 50px;
+            /* margin: 70px 0px 0px 0px; */
+            margin-top: 150px;
+
+
+
+        }
+
+        #box>div>p:nth-child(2) {
+            color: brown;
+            font-size: 90px;
+            /* margin: 70px 0px 0px 0px; */
+
+        }
+
+        #box>div>p:nth-child(3) {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #box>div>a:nth-child(4) {
+            /* border: 1px solid red; */
+            font-size: 18px;
+            color: white;
+        }
+
+
+
+
+        /* *************************** */
+
+        #main {
+            display: flex;
+            position: absolute;
+
+            right: 1px;
+            left: 0px;
+            /* width: 100px; */
+
+        }
+
+        #main>img {
+            width: 500px;
+            margin: auto;
+            /* margin-left: 20%; */
+
+
+        }
+
+
+
+
+
+        /* ******GReen**** */
+
+
+        #green>div:nth-child(1) {
+            /* border: 1px solid red; */
+            background-color: #c7ca99;
+            margin-top: 50%;
+            display: flex;
+            gap: 5px;
+
+
+            width: 100vw;
+
+            /* margin-top: 20px; */
+        }
+
+        #green>div:nth-child(1)>img {
+            background-color: #c7ca99;
+            width: 13vw;
+            margin-left: 45vw;
+            height: 170px;
+        }
+
+        #green>div>img+p {
+            /* border: 1px solid red; */
+            height: 50px;
+            margin-top: 150px;
+            margin-left: 250px;
+            font-weight: bold;
+
+
+
+
+
+
+
+        }
+
+        #green>div:nth-child(2) {
+            background-color: #c7ca99;
+            /* margin-top: 50%; */
+            display: flex;
+            justify-content: center;
+
+            gap: 26px;
+            /* border: 1px solid red; */
+            height: 700px;
+            width: 100vw;
+            /* margin-bottom: 100px; */
+            /* border: 1px solid green; */
+
+
+        }
+
+
+        #green>div:nth-child(2)>div {
+
+            margin-top: 0px;
+            width: 26vw;
+
+
+
+        }
+
+        #green>div:nth-child(2)>div>img {
+            width: 100%;
+
+
+        }
+
+        .para {
+            font-size: 17px;
+            font-family: soleil, Helvetica, Arial, sans-serif;
+
+        }
+
+        .headline {
+            font-family: freight-big-pro, Times, serif;
+            font-weight: 350;
+
+        }
+
+        .underline {
+            line-height: 40px;
+            text-decoration: underline;
+            font-family: soleil, Helvetica, sans-serif;
+            font-weight: 700;
+
+        }
+
+
+
+        /* *******MOre_story******* */
+
+        #more_story {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            gap: 26px;
+            /* border: 1px solid red; */
+            height: 500px;
+            width: 100vw;
+            background-color: #c7ca99;
+            margin-bottom: 20vh;
+
+        }
+
+        #more_story>div {
+            /* border: 1px solid red; */
+            background-color: #c7ca99;
+            /* margin-top: 50px; */
+            width: 15vw;
+
+            /* display: flex; */
+
+            gap: 20px;
+        }
+
+        #more_story>div>img {
+            width: 100%;
+
+        }
+
+        .more_headline {
+            background-color: #c7ca99;
+            font-family: freight-big-pro, Times, serif;
+            font-size: 52px;
+            font-weight: 200;
+            padding-left: 230px;
+            padding-bottom: 50px;
+
+        }
+
+        .more_para2 {
+            font-family: soleil, Helvetica, sans-serif;
+            width: 700;
+            text-decoration: underline;
+            font-size: 14px;
+            line-height: 37px;
+            font-weight: bold;
+
+
+        }
+
+        .more_headline2 {
+            font-family: freight-big-pro, Times, serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+
+        }
+
+
+
+
+        /* ******LOVE****** */
+
+        #love>div:nth-child(1) {
+            background-image: url("https://www.jcrew.com/s7-img-facade/AY634_BK0001_m?wid=376");
+
+        }
+
+        #love>div:nth-child(2) {
+            background-image: url("https://www.jcrew.com/s7-img-facade/BH543_WT0002?wid=376");
+        }
+
+        #love>div:nth-child(3) {
+            background-image: url("https://www.jcrew.com/s7-img-facade/BE870_PP3492?wid=376");
+        }
+
+        #love>div:nth-child(4) {
+            background-image: url("https://www.jcrew.com/s7-img-facade/H5809_PK5352_m?wid=376");
+        }
+
+        #love>div:nth-child(5) {
+            background-image: url("https://www.jcrew.com/s7-img-facade/BF793_WO8694?wid=376");
+        }
+
+        #love>div:nth-child(6) {
+            background-image: url("https://www.jcrew.com/s7-img-facade/BF389_BR6203_m?wid=376");
+        }
+
+        .hov_content {
+            display: none;
+            margin-top: 140px;
+            font-size: 17px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .hover_show:hover .hov_content {
+            display: inline-block;
+            /* border: 1px solid red; */
+        }
+
+        #we_love {
+            font-family: freight-big-pro, Times, serif;
+            font-weight: 400;
+            font-size: 36px;
+            margin-left: 30px;
+        }
+
+        #love {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+        }
+
+        #love>div {
+            width: 200px;
+            height: 250px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .fa-heart {
+            /* background-color: white; */
+            margin-left: 165px;
+            margin-top: 15px;
+        }
+
+
+
+
+
+        /* ******re_image******* */
+        #re_image_headline {
+            /* border: 1px solid red; */
+            text-align: center;
+            align-items: center;
+            font-family: freight-big-pro - 400;
+            font-size: 36px;
+            line-height: 32px;
+            font-weight: 400;
+            margin-top: 150px;
+        }
+
+        #re_image {
+            /* border: 1px solid orange; */
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            height: 500px;
+            width: 100vw;
+            margin-bottom: 20vh;
+            margin-top: 50px;
+            /* margin-left: 50px; */
+
+        }
+
+        #re_image>div {
+            /* border: 1px solid red; */
+            width: 30%;
+            height: auto;
+
+
+        }
+
+        #re_image>div>img {
+            width: 100%;
+        }
+
+        .re_image_headline {
+            font-size: 24px;
+            font-family: freight-big-pro - 400;
+            line-height: 31px;
+            font-weight: 400;
+        }
+
+        .re_image_para {
+            font-family: soleil - 700;
+            font-size: 14px;
+            line-height: 27px;
+            font-weight: 700;
+            text-decoration: underline;
+            font-weight: bold;
+
+        }
+
+        #insta_headline {
+            text-align: center;
+            font-family: freight-big-pro - 400;
+            font-size: 36px;
+            font-weight: 500;
+            /* line-height: 32px; */
+            /* padding-bottom: 40px; */
+        }
+
+        #insta_para {
+            text-align: center;
+            font-family: soleil, Helvetica, sans-serif;
+            font-weight: 400;
+            line-height: 2;
+            font-weight: bold;
+            font-size: 19px;
+            /* padding-bottom: 40px; */
+        }
+
+        #instagram {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            width: 100%;
+
+        }
+
+        #instagram>div {
+            width: 20vw;
+            height: 340px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #instagram>div:nth-child(1) {
+            background-image: url("https://edge.curalate.com/v1/img/OTj4csjB4WFTsgPslA6Y5-yvWTrBYOj5PhA4SP92sqA=/w/450?typ=webp");
+        }
+
+        #instagram>div:nth-child(2) {
+            background-image: url("https://edge.curalate.com/v1/img/ToBFDxTc90euACmuXlCyok9Ks33RHbkFAm9Sq1VyUFI=/w/600?typ=webp");
+        }
+
+        #instagram>div:nth-child(3) {
+            background-image: url("https://edge.curalate.com/v1/img/-Fsqv0sA4n1JyFB9PiSqnn6wWt7KZn8TSmxubvkuyF0=/w/600?typ=webp");
+        }
+
+        #instagram>div:nth-child(4) {
+            background-image: url("https://edge.curalate.com/v1/img/lEPiM6cB0ZtOiKRSKFzPu07f2TKMOf3liwXDuc55pc8=/w/450?typ=webp");
+        }
+
+        .insta_hover{
+            height: 100%;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .insta_hover>p:first-child{
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 18px;
+            margin-top: 53%;
+            margin-bottom: 30%;
+        }
+
+        .insta_content:hover .insta_hover{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #instagram>div>img {
+            width: 100%;
+
+        }
+
+
+
+        /* ********last box****** */
+        #last_box_headline {
+            text-align: center;
+            font-family: freight-big-pro, Times, serif;
+            ;
+            font-size: 36px;
+            font-weight: 400;
+            margin-top: 100px;
+
+        }
+
+        #last_box {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            width: 100vw;
+            margin-top: 50px;
+        }
+
+        #last_box>div {
+            /* border: 1px solid green; */
+            width: 15%;
+            height: 260px;
+        }
+
+        #last_box>div>p{
+            margin: 8px 0px 5px 5px;
+            font-family: sans-serif;
+            text-decoration: underline;
+            font-size: 15px;
+        }
+
+        #last_box>div>img {
+            width: 100%;
+        }
+
+        /* #main_div {
+            width: 100%;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+        }
+
+        #main_div>div {
+            height: 300px;
+            width: 40%;
+            border: 1px solid blue;
+        }
+
+        #left_div {
+            display: flex;
+
+        }
+
+        #left_div>img {
+            height: 150px;
+            width: 150px;
+        }
+
+        #right_div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        #right_div>div>img {
+            height: 35px;
+            width: 35px;
+        }
+
+        #right_div>div {
+            display: flex;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div id="box">
+
+        <!-- <img src="https://www.jcrew.com/brand_creative/homepage2022/07-Jul4/2022jul_0719_hp_w_img0_v2.jpg" alt="error"> -->
+
+        <div>
+            <p>Your Summer</p>
+            <p>Dress Code</p>
+            <p>For The Hotest day Of The Year...</p>
+            <a href="#" id="shop_adress">Shop Adresses</a>
+
+        </div>
+
+
+
+
+        <!-- 
+        <div id="main">
+            <div>
+                <img src="https://www.jcrew.com/brand_creative/homepage2022/06-June/2022jun_0524_hp_w_img7.jpg"
+                    alt="error">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/brand_creative/homepage2022/07-Jul4/2022jul_0719_hp_w_img1.jpg"
+                    alt="error">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/brand_creative/homepage2022/07-Jul4/2022jul_0719_hp_w_img2.jpg"
+                    alt="error">
+            </div>
+
+
+        </div> -->
+
+
+
+
+
+    </div>
+
+
+    <!-- *************** -->
+
+
+    <div id="green">
+
+
+        <div>
+            <img src="https://www.jcrew.com/brand_creative/2022/202204-Apr/logo_jcrew_collective_20220315_blk.png?imformat=generic"
+                alt="error">
+            <p>Meet Our Creative Community--></p>
+        </div>
+
+        <div>
+            <div>
+                <img src="https://www.jcrew.com/brand_creative/homepage2022/06-June/2022jun_0524_hp_w_img7.jpg"
+                    alt="error">
+                <p class="para">1 swimsuit, 2 ways</p>
+                <h1 class="headline">How I wear my ruched
+                    one-piece with Jen Azoulay</h1>
+                <p class="underline">Find some poolside inspo</p>
+
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/brand_creative/homepage2022/06-June/2022jun_0524_hp_w_img8.jpg"
+                    alt="error">
+                <p class="para">What to wear next</p>
+                <h1 class="headline">The new dress code
+                    with Beverly Nguyen</h1>
+                <p class="underline">Try these styling tricks</p>
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/brand_creative/homepage2022/06-June/2022jun_0524_hp_w_img9.jpg"
+                    alt="error">
+                <p class="para">The new arrivals edit</p>
+                <h1 class="headline">Instant classics with Allison Bornstein</h1>
+                <p class="underline">Shop her summer essentials</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ******MoreStory***** -->
+
+    <p class="more_headline">More Stories
+    </p>
+    <div id="more_story">
+
+
+        <div>
+            <img src="https://www.jcrew.com/brand_creative/homepage2022/07-Jul/v2/2022jul_0628_hp_w_img10.jpg" alt="">
+            <h3 class="more_headline2">The edit: beachy blooms</h3>
+            <p class="more_para2">Shop our packing list</p>
+        </div>
+
+        <div>
+            <img src="https://www.jcrew.com/brand_creative/homepage2022/07-Jul/v2/2022jul_0628_hp_w_img11.jpg" alt="">
+            <h3 class="more_headline2">Most wanted: the Zoe ballet collection</h3>
+            <p class="more_para2">Get a closer look</p>
+        </div>
+
+        <div>
+            <img src="https://www.jcrew.com/brand_creative/homepage2022/07-Jul/v2/2022jul_0628_hp_w_img12.jpg" alt="">
+            <h3 class="more_headline2">Creative Spirits Series: Monrowe™ X J.Crew</h3>
+            <p class="more_para2">Meet founder Dani Evans</p>
+        </div>
+
+        <div>
+            <img src="https://www.jcrew.com/brand_creative/homepage2022/07-Jul/v2/2022jul_0628_hp_w_img13.jpg" alt="">
+            <h3 class="more_headline2">The edit: sunset reds</h3>
+            <p class="more_para2">Shop the color story</p>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- ******LOVE******* -->
+    <h1 id="we_love">You’ll Also Love</h1>
+
+
+    <div id="love">
+        <div class="hover_show">
+            <i class="fa fa-heart fa-lg"></i>
+            <div class="hov_content">
+                <p>oven stroe marketfhfjncnccxn</p>
+                <p><strike>$128.00</strike></p>
+                <p>$89.50(30%off)</p>
+            </div>
+
+        </div>
+        <div class="hover_show">
+            <i class="fa fa-heart fa-lg"></i>
+            <div class="hov_content">
+                <p>oven stroe marketfhfjncnccxn</p>
+                <p><strike>$128.00</strike></p>
+                <p>$89.50(30%off)</p>
+            </div>
+
+        </div>
+        <div class="hover_show">
+            <i class="fa fa-heart fa-lg"></i>
+            <div class="hov_content">
+                <p>oven stroe marketfhfjncnccxn</p>
+                <p><strike>$128.00</strike></p>
+                <p>$89.50(30%off)</p>
+            </div>
+        </div>
+        <div class="hover_show">
+            <i class="fa fa-heart fa-lg"></i>
+            <div class="hov_content">
+                <p>oven stroe marketfhfjncnccxn</p>
+                <p><strike>$128.00</strike></p>
+                <p>$89.50(30%off)</p>
+            </div>
+        </div>
+        <div class="hover_show">
+            <i class="fa fa-heart fa-lg"></i>
+            <div class="hov_content">
+                <p>oven stroe marketfhfjncnccxn</p>
+                <p><strike>$128.00</strike></p>
+                <p>$89.50(30%off)</p>
+            </div>
+        </div>
+        <div class="hover_show">
+            <i class="fa fa-heart fa-lg"></i>
+            <div class="hov_content">
+                <p>oven stroe marketfhfjncnccxn</p>
+                <p><strike>$128.00</strike></p>
+                <p>$89.50(30%off)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ********Re_image***** -->
+
+    <p id="re_image_headline">And that's not all...</p>
+
+    <div id="re_image">
+        <div>
+            <img src="https://www.jcrew.com/brand_creative/homepage2021/05-May/2021_virtualsytling_hp_img0.jpg"
+                alt="error">
+            <h3 class="re_image_headline">We’re re-imagining shopping</h3>
+            <p class="re_image_para">Learn about our eco goals</p>
+        </div>
+
+        <div>
+            <img src="https://www.jcrew.com/brand_creative/virtual_styling/2022apr_styleondemand_hp_img0.jpg"
+                alt="error">
+            <h3 class="re_image_headline">Book a virtual or in-store
+                private shopping appointment</h3>
+            <p class="re_image_para">Get styled on demand</p>
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/brand_creative/homepage2021/05-May/2021_virtualsytling_hp_img2.jpg"
+                alt="error">
+            <h3 class="re_image_headline">In-store services</h3>
+            <p class="re_image_para">Visit us IRL</p>
+        </div>
+    </div>
+
+
+
+    <!-- ********** -->
+
+
+    <!-- append j.crew reward  -->
+
+    <!-- <div id="main_div">
+        <div id="left_div">
+            <img src="https://oilrecoveryco.com/wp-content/themes/orc2016/images/Logo.png" alt="error">
+            <div>
+                <p>J.CREW</p>
+                <p>REWARDS</p>
+                <button>JOIN NOW FOR FREE</button>
+                <p>(All we need is your email and a password!)</p>
+                <a>Learn More</a>
+            </div>
+        </div>
+
+        <div id="right_div">
+            <div>
+                <img src="https://www.pngrepo.com/download/130037/open-cardboard-box.png" alt="error">
+                <div>
+                    <p>FREE SHIPPING</p>
+                    <p>Every day, on every order at jcrew.com</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.pngrepo.com/download/130037/open-cardboard-box.png" alt="">
+                <div>
+                    <p>FREE SHIPPING</p>
+                    <p>Every day, on every order at jcrew.com</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.pngrepo.com/download/130037/open-cardboard-box.png" alt="">
+                <div>
+                    <p>FREE SHIPPING</p>
+                    <p>Every day, on every order at jcrew.com</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <!-- ********** -->
+
+
+
+    <p id="insta_headline">Shop our Instagram</p>
+    <p id="insta_para">(and join the fun with #injcrew)</p>
+    <div id="instagram">
+        <div class="insta_content">
+            <div class="insta_hover">
+                <p>Shop now</p>
+                <p>@jcrew</p>
+                <p>♡ 700likes</p>
+            </div>
+        </div>
+        <div class="insta_content">
+            <div class="insta_hover">
+                <p>Shop now</p>
+                <p>@jcrew</p>
+                <p>♡ 700likes</p>
+            </div>
+        </div>
+        <div class="insta_content">
+            <div class="insta_hover">
+                <p>Shop now</p>
+                <p>@jcrew</p>
+                <p>♡ 700likes</p>
+            </div>
+        </div>
+        <div class="insta_content">
+            <div class="insta_hover">
+                <p>Shop now</p>
+                <p>@jcrew</p>
+                <p>♡ 700likes</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- *********More you need to see********** -->
+
+    <p id="last_box_headline">More you need to see</p>
+    <di id="last_box">
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BI650_BL7683_m?wid=416" alt="error">
+            <p>Shop Women's Dresses & Jumpsuits</p>
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BI437_PT1317_m?wid=416" alt="error">
+            <p>Shop Women's Shirts & Tops</p>
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BG652_BK0001_m?wid=416" alt="error">
+            <p>Shop Women's Sweaters</p>
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BH925_NA6549_m?wid=416" alt="error">
+            <p>Shop Women's The Tees Shop</p>
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BH914_GR0086_m?wid=416" alt="error">
+            <p>Shop Women's Swimwear & sweetpants</p>
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BC108_PK5748_m?wid=416" alt="error">
+            <p>Shop Women's Swimwear</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer"></div>
+
+</body>
+
+</html>
+<script src="./home.js" type="module"></script>
 <html lang="en">
 
 <head>
@@ -96,3 +991,4 @@
 </body>
 
 </html>
+

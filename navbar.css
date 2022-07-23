@@ -1,3 +1,4 @@
+
   .hover-animation:hover{
     text-decoration: underline;
     font-weight: bold;
@@ -579,3 +580,52 @@ h3 {
     font-weight: lighter;
     margin: 1px 0px 0px 5px;
 }
+=======
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar>div:nth-child(1){
+    font-size: 15px;
+    /* width: 10%; */
+}
+
+#navbar>div:nth-child(2){
+   width: 50%;
+   /* margin-right: 30%; */
+}
+#navbar>div:nth-child(3){
+  /* width: 40%; */
+  display: flex;
+  gap: 20px;
+  
+}
+
+
+#navbar>div>button{
+    background-color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+#search{
+    padding: 8px;
+
+}
+
+
+img{
+    width: 20px;
+    padding: 5px;
+}
+#sale{
+    color: red;
+}
+
+
+
+

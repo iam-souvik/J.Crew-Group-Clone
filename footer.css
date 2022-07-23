@@ -1,3 +1,4 @@
+
 * {
     background-color: #f0f1f2;
     font-family: 'Anek Malayalam', sans-serif;
@@ -11,7 +12,7 @@
     line-height: -30px;
 }
 
-#footer>h4 {
+h4 {
     font-size: 14px;
     font-family: 'Anek Malayalam', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -21,7 +22,7 @@
 
 }
 
-#footer>p {
+p {
     font-size: 15px;
     color: black;
     font-size: 13px;
@@ -29,14 +30,14 @@
     word-spacing: 1px;
 }
 
-#footer>input,
-#footer>button {
+input,
+button {
     padding: 8px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-#footer>button {
+button {
     background-color: black;
     color: white;
     margin-left: -8px;
@@ -44,7 +45,7 @@
 
 }
 
-#footer>input {
+input {
     width: 250px;
 }
 
@@ -66,62 +67,48 @@
 
 }
 
-#footer>#first,
-#footer>#second,
-#footer>#third,
-#footer>#four {
+#first,
+#second,
+#third,
+#four {
     margin-top: 20px;
 }
 
-#footer>#facebook,
-#footer>#souvik {
-    margin-left: 20px;
+#facebook,
+#souvik {
+    margin-left: 10px;
 
 }
 
-
-#footer>#india {
-    margin-left: 5px;
-    margin-top: 20px;
+#india {
+    margin-left: -6px;
 }
 
-#footer>i {
+i {
     padding: 20px 20px 20px 0px;
- /* border: 1px solid red; */
- 
+    font-weight: bold;
+
 }
 
-#footer>#india>a {
+#india>a {
     color: black;
     margin-left: 20px;
 }
-#footer>#india>img{
-    width: 21px;
-}
 
-#footer>#souvik>p {
+#souvik>p {
     color: gray;
-    margin-top: 30px;
 }
 
-#footer>#first {
+#first {
     margin-left: 10px;
 }
 
-#footer>#second {
+#second {
     margin-left: 10px;
 }
 
-#footer>#third {
+#third {
     width: 230px;
     margin: 0px 60px 0px 10px;
-}
-#footer>#logo{
-    display: flex;
-    gap: 10px;
-}
-#footer>#logo>img{
-    margin-top: 30px;
-    width: 70px;
-    margin-left: 20px;
+
 }

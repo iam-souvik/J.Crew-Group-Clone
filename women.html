@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mans page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #navbar_bottom_title {
+            width: 100%;
+            height: 120px;
+            border: 1px solid gray;
+        }
+
+        .selling_atribute {
+            font-size: 12px;
+            color: rgb(12, 12, 141);
+            margin-bottom: 6px;
+        }
+
+        p {
+            margin-bottom: 6px;
+        }
+
+        #filter_div {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar_bottom_title">
+
+
+    </div>
+    <div id="filter_div">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+    <div id="container">
+        <!-- <div class="box">
+              <img src="https://lp2.hm.com/hmgoepprod?set=source[/5f/90/5f9063085b86c625b153ae6c27488dbb1e2e6aca.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]" alt="">
+              <img class="hover_img" src="https://lp2.hm.com/hmgoepprod?set=source[/37/aa/37aad356be2bda043481e33b967a43d6885ee09c.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]" alt="">
+        </div> -->
+
+    </div>
+
+    <div class="product_details">
+        <button type="button" class="btn product-close-btn" id="product-close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="product-details-content"></div>
+
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    let productDetailAddcart = document.querySelector(".product-details-content")
+    let removeProduct= () => {
+        mealDetailsContent.parentElement.classList.remove('showRecipe');
+        // window.location.reload()
+    }
+    // document.getElementById("product-close-btn").addEventListener("click", removeProduct);
+
+
+    let url = "https://www2.hm.com/en_in/women/new-arrivals/clothes/_jcr_content/main/productlisting.display.json?sort=stock&image-size=small&image=model&offset=36&page-size=36";
+    fetch(url)
+        .then(function (res) {
+            return res.json();
+        })
+        .then(function (res) {
+            console.log(res)
+            append(res.products)
+        })
+        .catch(function (err) {
+            console.log()
+        })
+
+
+
+
+    function append(data) {
+        let container = document.getElementById("container")
+        data.forEach((el) => {
+            // console.log(el)
+            let div = document.createElement("div")
+            div.setAttribute("class", "box")
+            let bac = document.createElement("img")
+            bac.setAttribute("class", "hover_img")
+            bac.src = el.image[0].dataAltImage;
+            let frunt = document.createElement("img")
+            frunt.src = el.image[0].src;
+            let heart = document.createElement("div")
+            heart.setAttribute("class", "heart")
+            let count = 0;
+            heart.addEventListener("click", function () {
+                if (count % 2 == 0) {
+
+                    heart.style.backgroundColor = "black"
+                    count = 1;
+
+                }
+                else {
+                    heart.style.backgroundColor = "rgb(121, 112, 112)"
+                    count = 0;
+                }
+
+
+
+            })
+            let div2 = document.createElement("div")
+            div2.setAttribute("class", "porduct_text")
+            let h4 = document.createElement("h4")
+            h4.innerHTML = el.price;
+            let p = document.createElement("p")
+            p.innerHTML = el.title;
+            let p1 = document.createElement("p")
+            p1.setAttribute("class", "selling_atribute")
+            p1.innerHTML = el.sellingAttribute;
+            let div1 = document.createElement("div")
+            div1.setAttribute("class", "product_div")
+            let button = document.createElement("button")
+            button.setAttribute("class", "btn")
+            button.innerHTML = "QUICK SHOP";
+            button.addEventListener("click", () => {
+                appednCart(el)
+            })
+            div2.append(p1, p, h4)
+            div.append(frunt, bac, heart, button)
+            div1.append(div, div2)
+            container.append(div1)
+        });
+    }
+ 
+
+    let appednCart=(data)=>{
+        console.log(data)
+    }
+
+    
+
+    document.getElementById("product-close-btn").addEventListener("click", removeProduct);
+</script>

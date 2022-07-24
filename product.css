@@ -158,7 +158,7 @@
 }
 #productInfo>p{
     margin-left: 4%;
-    margin-top: 2%;   
+
 }
 #category>li{
     font-size: 13px;
@@ -201,7 +201,7 @@ li{
 
 
 
-.heart {
+#heart {
     position: relative;
     height: 20px;
     width: 20px;
@@ -218,7 +218,7 @@ li{
 
 }
 
-.heart::before {
+#heart::before {
     position: absolute;
     content: "";
     top: -50%;
@@ -230,7 +230,7 @@ li{
 
 }
 
-.heart::after {
+#heart::after {
     position: absolute;
     content: "";
     right: -50%;

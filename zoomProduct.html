@@ -96,42 +96,7 @@
     </div>
 </body>
 </html>
-<script>
-    let productData=JSON.parse(localStorage.getItem("productData"))
-
-    document.getElementById("productName").innerText=productData.title;
-    document.getElementById("artCod").innerText=`Item_${productData.articleCode}`;
-    document.getElementById("price").innerText=productData.price;
-    document.getElementById("bigimg").src=productData.image[0].dataAltImage
-    document.getElementById("smallimg").src=productData.image[0].dataAltImage;
-    document.getElementById("smallimg1").src=productData.image[0].src;
-    document.getElementById("proCategory").innerText=productData.category
-    document.getElementById("proColor").innerText=productData.swatches[0].colorName;
-    document.getElementById("probrand").innerText=productData.brandName
-    // document.getElementById("proDetails").innerText=productData.onClick;
-
-    console.log(productData)
-
-    function change(){
-    document.getElementById("bigimg").src=productData.image[0].dataAltImage;
-    }
-
-    function change1(){
-    document.getElementById("bigimg").src=productData.image[0].src
-    }
-
-
-    function addtoBag(){
-        // let document.getElementById("addBag")
-        let arr=[];
-        let obj={
-            Name:productData.title,
-            Price:productData.price,
-            Brand:productData.brandName,
-            Code:productData.articleCode,
-        }
-        arr.push(obj)
-        localStorage.setItem("productItem",JSON.stringify(arr))
-    }
+<script src="addtocart.js">
+   
 
 </script>

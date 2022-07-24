@@ -78,14 +78,6 @@
    font-size: 15px;
 }
 
-/* #container{
-    display: grid;
-    grid-template-columns: repeat(3,400px);
-    grid-template-rows:repeat(100px);
-    justify-content: center;        
-    gap: 20px;  
-    margin-top: 40px;
-} */
 #godown{
     display: flex;
     height: 610px;
@@ -94,6 +86,9 @@
     width: 0px;
     overflow: scroll;
     
+}
+#sidefilter::-webkit-scrollbar{
+    opacity: 0;
 }
 #container{
     width: 100%;
@@ -105,6 +100,9 @@
     margin-top: 30px; 
     overflow: scroll;
     /* border: 1px solid red */
+}
+#container::-webkit-scrollbar{
+    opacity: 0;
 }
 
 #sidefilter>ul{
@@ -126,28 +124,25 @@
     background-color: white;
     font-weight: bold;
 }
-#container>#holdproduct{
-    
-    /* border: 1px solid red; */
+#holdproduct{
+    /* border:1px solid red; */
+    padding-bottom: 5px;
 }
 #holdproduct:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #box{
-
     position: relative;
-
     display:inline-block;
     overflow: hidden;
-
     /* border: 1px solid gray; */
     height: 82%;
     width: 100%;
 
 }
 #box>img{
-    width: 94%;
-    height: 94%; 
+    width:94%;
+    height:95%; 
    margin-left: 3%;
    margin-top: 3%;
    transition: all linear 0.4s;
@@ -160,10 +155,6 @@
 }
 #box:hover img.hover_img{
     opacity: 1;
-}
-#holdproduct>#productInfo{
-    /* height: 15%; */
-    /* border: 1px solid red; */
 }
 #productInfo>p{
     margin-left: 4%;
@@ -207,3 +198,63 @@ li{
     margin-left: 8%;
     margin-top: 2%;
 }
+
+
+
+.heart {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(121, 112, 112);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 0 4px;
+    transform: rotate(-45deg);
+    margin-top:-88%;
+    margin-left:88%;
+    cursor: pointer;
+    padding: -3px;
+
+}
+
+.heart::before {
+    position: absolute;
+    content: "";
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+
+}
+
+.heart::after {
+    position: absolute;
+    content: "";
+    right: -50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+
+}
+.btn {
+    position:absolute;
+    margin-top: 290px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    margin-left: 130px;
+    /* padding: 20px; */
+
+    opacity: 1;
+ 
+}
+
+#box:hover .btn{
+    opacity: 1;
+}
+

@@ -93,7 +93,7 @@ let navbar = () => {
                 <div>
                     <div class="div_box">
                         <h3>Women</h3>
-                        <a href="#">New Arriavals</a>
+                        <a href="womannew.html">New Arriavals</a>
                         <a href="#">Best Sellers</a>
                         <a href="#">Top Rated</a>
                         <a href="#">Brand We Love</a>
